@@ -9,6 +9,7 @@ import com.mcorp.hotelprojectbackend.services.BookingService;
 import com.mcorp.hotelprojectbackend.services.IRoomService;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.codec.binary.Base64;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -44,6 +45,7 @@ public class RoomController {
         return roomService.getAllRoomTypes();
     }
 
+    @GetMapping("/all-rooms")
     public ResponseEntity<List<RoomResponse>> getAllRooms() throws SQLException {
         List<Room> rooms = roomService.getAllRooms();
         List<RoomResponse> roomResponses = new ArrayList<>();
@@ -59,15 +61,22 @@ public class RoomController {
         return ResponseEntity.ok(roomResponses);
     }
 
+
+    @DeleteMapping("/delete/room/{roomId}")
+    public ResponseEntity<Void> deleteRoom(@PathVariable Long roomId){
+        roomService.deleteRoom(roomId);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+
     private RoomResponse getRoomResponse(Room room) {
 
         List<BookedRoom> bookings = getAllBookingsByRoomId(room.getId());
-        List<BookingResponse> bookingInfo = bookings
-                .stream()
-                .map(booking -> new BookingResponse(booking.getBookingId(),
-                        booking.getCheckInDate(),
-                        booking.getCheckOutDate(),
-                        booking.getBookingConfirmationCode())).toList();
+//        List<BookingResponse> bookingInfo = bookings
+//                .stream()
+//                .map(booking -> new BookingResponse(booking.getBookingId(),
+//                        booking.getCheckInDate(),
+//                        booking.getCheckOutDate(),
+//                        booking.getBookingConfirmationCode())).toList();
         byte[] photoBytes = null;
         Blob photoBLob = room.getPhoto();
         if(photoBLob != null) {
@@ -82,8 +91,8 @@ public class RoomController {
                 room.getRoomType(),
                 room.getRoomPrice(),
                 room.isBooked(),
-                photoBytes,
-                bookingInfo);
+                photoBytes
+                );
     }
 
     private List<BookedRoom> getAllBookingsByRoomId(Long roomId) {
