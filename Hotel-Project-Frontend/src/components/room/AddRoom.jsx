@@ -64,20 +64,21 @@ const AddRoom = () => {
 
   return (
     <>
-      <section className="container, mt-5 mb-5">
+      <section className="container mt-5 mb-5">
         <div className="row justify-content-center">
           <div className="col-md-8 col-lg-6">
             <h2 className="mt-5 mb-2">Add a New Room</h2>
             {successMessage && (
               <div className="alert alert-success fade show">
                 {" "}
-                {successMessage}{" "}
+                {successMessage}
               </div>
             )}
+
             {errorMessage && (
               <div className="alert alert-danger fade show">
                 {" "}
-                {errorMessage}{" "}
+                {errorMessage}
               </div>
             )}
 
@@ -93,15 +94,14 @@ const AddRoom = () => {
                   />
                 </div>
               </div>
-
               <div className="mb-3">
                 <label htmlFor="roomPrice" className="form-label">
                   Room Price
                 </label>
                 <input
+                  required
                   type="number"
                   className="form-control"
-                  required
                   id="roomPrice"
                   name="roomPrice"
                   value={newRoom.roomPrice}
@@ -110,28 +110,31 @@ const AddRoom = () => {
               </div>
 
               <div className="mb-3">
-                <label htmlFor="roomType" className="form-label">
+                <label htmlFor="photo" className="form-label">
                   Room Photo
                 </label>
                 <input
-                  type="file"
-                  id="photo"
+                  required
                   name="photo"
+                  id="photo"
+                  type="file"
                   className="form-control"
                   onChange={handleImageChange}
                 />
                 {imagePreview && (
                   <img
                     src={imagePreview}
-                    alt="Preview Room Photo"
+                    alt="Preview  room photo"
                     style={{ maxWidth: "400px", maxHeight: "400px" }}
                     className="mb-3"
-                  />
+                  ></img>
                 )}
               </div>
-
-              <div className="d-grid d-md-flex mt-2">
-                <button className="btn btn-outline-primary ml-5">
+              <div className="d-grid gap-2 d-md-flex mt-2">
+                <Link to={"/existing-rooms"} className="btn btn-outline-info">
+                  Existing rooms
+                </Link>
+                <button type="submit" className="btn btn-outline-primary ml-5">
                   Save Room
                 </button>
               </div>
