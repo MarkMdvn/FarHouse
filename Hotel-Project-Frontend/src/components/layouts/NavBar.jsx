@@ -1,4 +1,13 @@
-import React from "react";
+import React, { useContext, useState } from "react";
+import { NavLink, Link } from "react-router-dom";
+
+const NavBar = () => {
+  const [showAccount, setShowAccoutn] = useState(false);
+};
+
+const handleAccountClick = () => {
+  setShowAccoutn(!showAccount);
+};
 
 function NavBar() {
   return (
@@ -34,6 +43,33 @@ function NavBar() {
               <NavLink className="nav-link" aria-curret="page" to={"/admin"}>
                 Admin
               </NavLink>
+            </li>
+          </ul>
+
+          <ul className="d-flex navbar-nav">
+            <li className="nav-item">
+              <NavLink className="nav-link" to={"/find-booking"}>
+                Find My Booking
+              </NavLink>
+            </li>
+            <li className="nav-item dropdown">
+              <ul>
+                <li>
+                  <Link to={"/login"} className="dropdown-item">
+                    Login
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/profile"} className="dropdown-item">
+                    Profile
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/logout"} className="dropdown-item">
+                    Logout
+                  </Link>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>

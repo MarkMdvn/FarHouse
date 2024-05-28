@@ -1,10 +1,18 @@
 import React from "react";
+import RoomCarousel from "../common/RoomCarousel";
 
 const Home = () => {
   return (
-    <div>
-      <h2>Welcome to the home page</h2>
-    </div>
+    <section>
+      <MainHeader />
+      <section className="container">
+        <RoomCarousel />
+        <Parallax />
+        <RoomCarousel />
+        <HotelService />
+        <Parallax />
+      </section>
+    </section>
   );
 };
 
