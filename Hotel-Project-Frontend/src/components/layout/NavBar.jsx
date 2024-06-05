@@ -13,10 +13,13 @@ const NavBar = () => {
   const userRole = localStorage.getItem("userRole");
 
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary px-5 shadow mt-5 sticky-top">
+    <nav className="navbar  navbar-expand-lg navbar-gradient bg-body-tertiary px-5 py-15 sticky-top">
       <div className="container-fluid">
         <Link to={"/"} className="navbar-brand">
-          <span className="hotel-color">FarHouse Hostels</span>
+          <img src="hotel-logo.png" alt="hotel-logo" width="40px" />
+          <span className="hotel-color">
+            <b>FarHouse Hostels</b>
+          </span>
         </Link>
 
         <button
