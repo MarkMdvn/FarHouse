@@ -1,6 +1,8 @@
 import React, { useContext, useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import Logout from "../auth/Logout";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = () => {
   const [showAccount, setShowAccount] = useState(false);
@@ -42,14 +44,14 @@ const NavBar = () => {
                 aria-current="page"
                 to={"/browse-all-rooms"}
               >
-                Browse all rooms
+                <FontAwesomeIcon icon={faSearch} /> All rooms
               </NavLink>
             </li>
 
             {isLoggedIn && userRole === "ROLE_ADMIN" && (
               <li className="nav-item">
                 <NavLink className="nav-link" aria-current="page" to={"/admin"}>
-                  Admin
+                  Admininstration Panel
                 </NavLink>
               </li>
             )}

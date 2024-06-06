@@ -4,6 +4,11 @@ import moment from "moment";
 import { getAvailableRooms } from "../utils/ApiFunctions";
 import RoomSearchResults from "./RoomSearchResult";
 import RoomTypeSelector from "./RoomTypeSelector";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faPlaneDeparture,
+  faPlaneArrival,
+} from "@fortawesome/free-solid-svg-icons";
 
 const RoomSearch = () => {
   const [searchQuery, setSearchQuery] = useState({
@@ -71,7 +76,9 @@ const RoomSearch = () => {
           <Row className="justify-content-center">
             <Col xs={12} md={3}>
               <Form.Group controlId="checkInDate">
-                <Form.Label className="ml-auto">Check-in Date:</Form.Label>
+                <Form.Label style={{ marginLeft: "10px" }}>
+                  <FontAwesomeIcon icon={faPlaneArrival} /> Check-in Date:
+                </Form.Label>
                 <Form.Control
                   type="date"
                   name="checkInDate"
@@ -83,7 +90,9 @@ const RoomSearch = () => {
             </Col>
             <Col xs={12} md={3}>
               <Form.Group controlId="checkOutDate">
-                <Form.Label>Check-out Date</Form.Label>
+                <Form.Label style={{ marginLeft: "10px" }}>
+                  <FontAwesomeIcon icon={faPlaneDeparture} /> Check-out Date:
+                </Form.Label>
                 <Form.Control
                   type="date"
                   name="checkOutDate"
@@ -95,7 +104,7 @@ const RoomSearch = () => {
             </Col>
             <Col xs={12} md={3}>
               <Form.Group controlId="roomType">
-                <Form.Label>Room Type</Form.Label>
+                <Form.Label>Room Type:</Form.Label>
                 <div className="d-flex">
                   <RoomTypeSelector
                     className="mr-2"

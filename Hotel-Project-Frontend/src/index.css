@@ -1,9 +1,13 @@
 body {
-  min-height: 100vh;
-  padding-bottom: 50px;
-  background: linear-gradient(#ffffff, rgb(255, 238, 184));
+  min-height: 100%;
+  background: linear-gradient(#ffffff, rgb(247, 238, 210));
   color: #2b2727;
 }
+
+.footer-class {
+  background-color: #2e2a1e;
+}
+
 .card {
   opacity: 0.9;
 }
@@ -21,8 +25,8 @@ body {
 .navbar-gradient {
   background: linear-gradient(
     to bottom,
-    rgba(255, 231, 187, 0.89),
-    rgba(0, 0, 0, 0)
+    rgb(255, 255, 255),
+    rgb(255, 255, 255)
   ) !important;
   backdrop-filter: blur(3px);
 }
@@ -248,4 +252,12 @@ h2 {
   background-color: #f5f5f5;
   height: 60px;
   text-align: center;
+}
+
+.text-shadow-lg {
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }

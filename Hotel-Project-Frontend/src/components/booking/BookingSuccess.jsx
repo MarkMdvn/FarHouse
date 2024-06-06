@@ -8,12 +8,12 @@ const BookingSuccess = () => {
   const error = location.state?.error;
   return (
     <div className="container">
-      <Header title="Booking Success" />
+      <Header title="Booking success" />
       <div className="mt-5">
         {message ? (
           <div>
             <h3 className="text-success"> Room successfully booked!</h3>
-            <p className="text-success">{message}</p>
+            <p className="text-success py-5">{message}</p>
           </div>
         ) : (
           <div>
