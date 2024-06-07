@@ -5,7 +5,7 @@ const Parallax = () => {
   return (
     <div className="parallax mb-5">
       <Container className="text-center px-5 py-5 justify-content-center">
-        <div className="animated-texts bounceIn">
+        <div className="animated-texts bounceIn big-text-shadow">
           <h1>
             Experience the Best hospitality at{" "}
             <span className="hotel-color">FarHouse Hotels</span>

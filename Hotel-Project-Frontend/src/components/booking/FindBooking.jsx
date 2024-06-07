@@ -142,7 +142,7 @@ const FindBooking = () => {
             )}
           </div>
         ) : (
-          <div className="py-5">find booking...</div>
+          <div className="py-5 custom-mb">find booking...</div>
         )}
 
         {isDeleted && (

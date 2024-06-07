@@ -19,7 +19,7 @@ const HotelService = () => {
 
         <Row className="mt-4">
           <h4 className="text-center">
-            Services at <span className="hotel-color"> FarHouse - </span>Hotel
+            Services at <span className="hotel-color"> FarHouse - </span>Hotel{" "}
             <span className="gap-2 ml-5">
               <FaClock className="ml-5" /> 24-Hour Front Desk
             </span>

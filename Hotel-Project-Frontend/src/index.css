@@ -5,7 +5,7 @@ body {
 }
 
 .footer-class {
-  background-color: #2e2a1e;
+  background-color: #29251a;
 }
 
 .card {
@@ -13,7 +13,7 @@ body {
 }
 
 .background-gradient-1 {
-  background: linear-gradient(#ffffff, rgb(255, 238, 184));
+  background: linear-gradient(#ffffff, rgb(255, 245, 213));
 }
 
 /* Navigation bar definitions */
@@ -62,7 +62,7 @@ body {
 
 /* Carousell */
 .carousell {
-  background-color: #f5e1b686;
+  background-color: #e4dbb6;
 }
 
 @media screen and (min-width: 992px) {
@@ -102,6 +102,39 @@ body {
 .vertical-rule {
   border-left: "0.5px solid black";
   height: "100vh";
+}
+
+.custom-mb {
+  margin-bottom: 19vh;
+}
+
+.big-text-shadow {
+  font-size: 2rem; /* Adjust the size of the text as needed */
+  color: #fff; /* Text color */
+  text-shadow: 6px 5px 8px rgba(0, 0, 0, 0.9); /* Adjust the shadow properties */
+}
+
+.footer-image {
+  background-image: url("assets/images/winning-award-card2.jpg");
+  background-attachment: initial;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; /* Changed from cover to contain */
+  height: 17vh; /* Assuming you meant viewport height */
+  width: 100%; /* Ensuring it spans the full width */
+  max-width: 300px; /* Optional: limiting max width */
+  margin: 0 auto; /* Centering the image if it's smaller than the container */
+}
+.footer-image-europe {
+  background-image: url("assets/images/europe-logo.png");
+  background-attachment: initial;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 10vh;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .parallax {
@@ -201,6 +234,9 @@ h2 {
   }
 }
 /* Header overlay */
+.background-dim {
+  background-color: rgba(0, 0, 0, 0.5);
+}
 .overlay {
   position: absolute;
   top: 0;

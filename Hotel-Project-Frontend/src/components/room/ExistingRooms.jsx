@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { deleteRoom, getAllRooms } from "../utils/ApiFunctions";
-import { Col, Row } from "react-bootstrap";
+import { Button, Col, Row } from "react-bootstrap";
 import RoomFilter from "../common/RoomFilter";
 import RoomPaginator from "../common/RoomPaginator";
 import { FaEdit, FaEye, FaPlus, FaTrashAlt } from "react-icons/fa";
@@ -128,16 +128,18 @@ const ExistingRooms = () => {
                     <td>{room.roomType}</td>
                     <td>{room.roomPrice}</td>
                     <td className="gap-2">
-                      <Link to={`/edit-room/${room.id}`} className="gap-2">
-                        <span className="btn btn-info btn-sm">
-                          <FaEye />
-                        </span>
-                        <span className="btn btn-warning btn-sm ml-5">
-                          <FaEdit />
-                        </span>
-                      </Link>
+                      <button className="btn btn-sm">
+                        <Link
+                          to={`/edit-room/${room.id}`}
+                          className="gap-2 mr-5"
+                        >
+                          <span className="btn btn-warning btn-sm ml-auto">
+                            <FaEdit />
+                          </span>
+                        </Link>
+                      </button>
                       <button
-                        className="btn btn-danger btn-sm ml-5"
+                        className="btn btn-danger btn-sm ml-2"
                         onClick={() => handleDelete(room.id)}
                       >
                         <FaTrashAlt />
