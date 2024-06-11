@@ -24,8 +24,10 @@ This is a really extensive project. If you just want a summary, please scroll do
 
 ---
 
-<a name="built-with"></a>
 ## 🛠️ Built With
+...
+<a name="built-with"></a>
+
 
 <div align="center">
   
