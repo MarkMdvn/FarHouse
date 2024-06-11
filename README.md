@@ -84,6 +84,8 @@ This project is a full-featured hotel management web application designed to str
 </div>
 <br>
 
+---
+
 * Users can choose their desired check-in and check-out dates using the intuitive date picker and the desired room type from the dropdown menu. The available rooms are dynamically updated based on the selected dates and room type, ensuring accurate availability information for users.
 
 <br>
@@ -92,6 +94,7 @@ This project is a full-featured hotel management web application designed to str
 <img src="https://github.com/MarkMdvn/FarHouse/blob/main/Hotel-Project-Frontend/public/readme-images/4-rooms-by-date-search.png" alt="FarHouse" width="700px">
 </div>
 
+---
 
 * If we want to make a reservation we will need an account:
 
@@ -104,8 +107,45 @@ This project is a full-featured hotel management web application designed to str
 <img src="https://github.com/MarkMdvn/FarHouse/blob/main/Hotel-Project-Frontend/public/readme-images/6-registration.png" width="700px">
 </div>
 
+* After the registration, the new user will be created in the database. Now he will be able to login.
+
+  * Secure User Registration: Upon registration, user credentials are securely stored in the database with password encryption, ensuring data protection.
+  * Default Role Assignment: New users are assigned the USER role by default, granting them access to basic functionalities within the application.
+  * Role Upgrading: Admins have the ability to upgrade user roles, granting additional privileges such as access to admin-specific features.
+  * Role-Based Access Control: Different user roles (e.g., USER, ADMIN) may have different access levels within the application, ensuring proper authorization and data protection.
+ 
+
 <div align="center">
-<img src="https://github.com/DaVinci0003/LibraryDemo/blob/main/images/boodAdded-example.png" alt="onlineLibrary" width="300px">
+<img src="https://github.com/MarkMdvn/FarHouse/blob/main/Hotel-Project-Frontend/public/readme-images/7-database-registration.png" alt="FarHouse" width="1000px">
+</div>
+
+---
+
+* After the login we can make the reservation choosing the roomtype, check-in and check-out dates, number of adults, children and the name of the Guest
+* Users can review their reservation details, including room type, check-in and check-out dates, number of guests, and total price, before confirming the booking.   
+
+<div align="center">
+<img src="https://github.com/MarkMdvn/FarHouse/blob/main/Hotel-Project-Frontend/public/readme-images/8-booking-confirmation-page.png" width="700px">
+</div>
+
+* If the room is booked for the chosen dates, this error will appear:
+
+<div align="center">
+<img src="https://github.com/MarkMdvn/FarHouse/blob/main/Hotel-Project-Frontend/public/readme-images/11-room-already-booked.png" width="700px">
+</div>
+
+---
+  
+* After the registration, the new user will be created in the database. Now he will be able to login.
+
+  * Secure User Registration: Upon registration, user credentials are securely stored in the database with password encryption, ensuring data protection.
+  * Default Role Assignment: New users are assigned the USER role by default, granting them access to basic functionalities within the application.
+  * Role Upgrading: Admins have the ability to upgrade user roles, granting additional privileges such as access to admin-specific features.
+  * Role-Based Access Control: Different user roles (e.g., USER, ADMIN) may have different access levels within the application, ensuring proper authorization and data protection.
+ 
+
+<div align="center">
+<img src="https://github.com/MarkMdvn/FarHouse/blob/main/Hotel-Project-Frontend/public/readme-images/7-database-registration.png" alt="FarHouse" width="1000px">
 </div>
 
 ---
