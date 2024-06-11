@@ -14,7 +14,7 @@
   <a href="#built-with">Built With</a> •
   <a href="#description">Description</a> •
   <a href="#functionalities">Functionalities</a> •
-  <a href="examples">Examples</a> 
+  <a href="#examples">Examples</a> 
 </div>
 
 <br>
@@ -22,7 +22,7 @@
 ![screenshot](https://github.com/MarkMdvn/FarHouse/blob/main/Hotel-Project-Frontend/public/readme-images/1-Main-Homepage.png)
 
 # ⚠️ Attention:
-This is a really extensive project. If you just want a summary, please scroll down to the <a href="summary">"Summary"</a> section.
+This is a really extensive project. If you just want a summary, please scroll down to the <a href="#summary">"Summary"</a> section.
 
 ---
 
