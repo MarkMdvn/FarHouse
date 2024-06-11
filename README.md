@@ -14,7 +14,7 @@
   <a href="#built-with">Built With</a> •
   <a href="#description">Description</a> •
   <a href="#functionalities">Functionalities</a> •
-  <a href="#example">Example</a> 
+  <a href="#example">Examples</a> 
 </p>
 
 ![screenshot](https://github.com/MarkMdvn/FarHouse/blob/main/Hotel-Project-Frontend/public/readme-images/1-Main-Homepage.png)
@@ -61,34 +61,47 @@ This project is a full-featured hotel management web application designed to str
 
 ## 📱 Functionalities
 
-* Book Management: Users can perform CRUD operations (Create, Read, Update, Delete) on books stored in the database. This includes adding new books, updating existing book information, and removing books from the library.
+* Room Management: Admins can perform CRUD operations (Create, Read, Update, Delete) on rooms. This includes adding new rooms, updating existing room details, and removing rooms from the system. Changes are dynamically reflected on the user interface.
 
-* Wishlist: Users have the ability to add books to their wishlist, making it convenient to keep track of books they're interested in reading.
+* Reservation System: Users can browse available rooms, make reservations, update their bookings, and cancel reservations through the web app, providing a seamless booking experience.
+
+* User Authentication: The application includes secure user authentication, allowing users to create accounts, log in, and manage their reservations.7
+
+* Admin Dashboard: Admins have access to a dedicated dashboard where they can manage rooms, view current bookings, and oversee overall hotel operations.
+
+* Dynamic Room Availability: The web app dynamically updates room availability based on user reservations, ensuring accurate and up-to-date information for users.
+
 
 ## 📷 Examples
 
-* The 'All Books' page of the project retrieves all book entries from the database dynamically. This process is facilitated by Thymeleaf, which aids in generating dynamic HTML content:
+* Dynamic Room Display: The React carousel showcases all available rooms in the hotel. This component dynamically updates whenever new rooms are added, ensuring that users always see the most current offerings.
 
 <div align="center">
-<img src="https://github.com/DaVinci0003/LibraryDemo/blob/main/images/AllBooks-example.png" alt="onlineLibrary" width="700px">  
+<img src="https://github.com/MarkMdvn/FarHouse/blob/main/Hotel-Project-Frontend/public/readme-images/2-carousell-showcase1.png" alt="FarHouse" width="700px">  
 </div>
+<div align="center">
+<img src="https://github.com/MarkMdvn/FarHouse/blob/main/Hotel-Project-Frontend/public/readme-images/3-carousell-showcase2.png" alt="FarHouse" width="700px">  
+</div>
+<br>
+
+* Users can choose their desired check-in and check-out dates using the intuitive date picker and the desired room type from the dropdown menu. The available rooms are dynamically updated based on the selected dates and room type, ensuring accurate availability information for users.
 
 <br>
 
-* And this is a screenshot of the relational database from where it fetches the data:
-
-<br>
-
 <div align="center">
-<img src="https://github.com/DaVinci0003/LibraryDemo/blob/main/images/MySQL-example.png" alt="onlineLibrary" width="700px">
+<img src="https://github.com/MarkMdvn/FarHouse/blob/main/Hotel-Project-Frontend/public/readme-images/4-rooms-by-date-search.png" alt="FarHouse" width="700px">
 </div>
 
----
 
-* When you try to add a book, this form will appear and after pressing "Submit", Hibernate will update the database:
+* If we want to make a reservation we will need an account:
+
+   * Secure User Authentication: Users are required to log in or register before making a reservation, ensuring secure access to booking functionalities.
+   * JWT Authentication: The system utilizes JSON Web Tokens (JWT) for user authentication and authorization, enhancing security and protecting user data.
+   * User Registration: New users can easily create an account by providing basic information and securely storing their credentials.
+
 
 <div align="center">
-<img src="https://github.com/DaVinci0003/LibraryDemo/blob/main/images/addBook-example.png" alt="onlineLibrary" width="700px">
+<img src="https://github.com/MarkMdvn/FarHouse/blob/main/Hotel-Project-Frontend/public/readme-images/6-registration.png" width="700px">
 </div>
 
 <div align="center">
