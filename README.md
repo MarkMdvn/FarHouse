@@ -134,18 +134,62 @@ This project is a full-featured hotel management web application designed to str
 <img src="https://github.com/MarkMdvn/FarHouse/blob/main/Hotel-Project-Frontend/public/readme-images/11-room-already-booked.png" width="700px">
 </div>
 
----
-  
-* After the registration, the new user will be created in the database. Now he will be able to login.
-
-  * Secure User Registration: Upon registration, user credentials are securely stored in the database with password encryption, ensuring data protection.
-  * Default Role Assignment: New users are assigned the USER role by default, granting them access to basic functionalities within the application.
-  * Role Upgrading: Admins have the ability to upgrade user roles, granting additional privileges such as access to admin-specific features.
-  * Role-Based Access Control: Different user roles (e.g., USER, ADMIN) may have different access levels within the application, ensuring proper authorization and data protection.
- 
+* If everything went well, the booking will be created in the database:
 
 <div align="center">
-<img src="https://github.com/MarkMdvn/FarHouse/blob/main/Hotel-Project-Frontend/public/readme-images/7-database-registration.png" alt="FarHouse" width="1000px">
+<img src="https://github.com/MarkMdvn/FarHouse/blob/main/Hotel-Project-Frontend/public/readme-images/10-booking-in-database.png" width="1000px">
+</div>
+
+* And the user will see the next message:
+
+<div align="center">
+<img src="https://github.com/MarkMdvn/FarHouse/blob/main/Hotel-Project-Frontend/public/readme-images/9-booking-success.png" width="700px">
+</div>
+
+---
+  
+* The "All rooms" page shows all the available rooms, which can be filtered by the desired room type: 
+
+<div align="center">
+<img src="https://github.com/MarkMdvn/FarHouse/blob/main/Hotel-Project-Frontend/public/readme-images/12-all-rooms.png" alt="FarHouse" width="700px">
+</div>
+
+---
+
+* The "Find my booking" page allows users to find their bookings by the confirmation code:  
+
+<div align="center">
+<img src="https://github.com/MarkMdvn/FarHouse/blob/main/Hotel-Project-Frontend/public/readme-images/13-find-booking.png" alt="FarHouse" width="700px">
+</div>
+
+---
+  
+* The "All rooms" page shows all the available rooms, which can be filtered by the desired room type: 
+
+<div align="center">
+<img src="https://github.com/MarkMdvn/FarHouse/blob/main/Hotel-Project-Frontend/public/readme-images/12-all-rooms.png" alt="FarHouse" width="700px">
+</div>
+
+---
+
+<h2>Administration panel:</h2>
+
+<h3>If the user has the "ADMIN" role:</h3>
+
+* Room Management: Admins can perform CRUD operations (Create, Read, Update, Delete) on rooms, allowing them to add new rooms, update existing room details, and remove rooms from the system.
+ 
+<div align="center">
+<img src="https://github.com/MarkMdvn/FarHouse/blob/main/Hotel-Project-Frontend/public/readme-images/14-administration-panel-existing-rooms.png" alt="FarHouse" width="700px">
+</div>
+
+<div align="center">
+<img src="https://github.com/MarkMdvn/FarHouse/blob/main/Hotel-Project-Frontend/public/readme-images/15-edit-room.png" alt="FarHouse" width="700px">
+</div>
+
+* Booking Oversight: Admins can view and manage all bookings made through the web app, including checking reservation details, updating booking statuses, and canceling bookings if necessary.
+
+<div align="center">
+<img src="https://github.com/MarkMdvn/FarHouse/blob/main/Hotel-Project-Frontend/public/readme-images/16-administration-bookings.png" alt="FarHouse" width="700px">
 </div>
 
 ---
