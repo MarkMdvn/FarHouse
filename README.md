@@ -10,24 +10,23 @@
 <h4 align="center">This web app facilitates hotel management and bookings with ease.</h4>
 
 
-<p align="center">
+<div align="center">
   <a href="#built-with">Built With</a> •
   <a href="#description">Description</a> •
   <a href="#functionalities">Functionalities</a> •
-  <a href="#example">Examples</a> 
-</p>
+  <a href="examples">Examples</a> 
+</div>
+
+<br>
 
 ![screenshot](https://github.com/MarkMdvn/FarHouse/blob/main/Hotel-Project-Frontend/public/readme-images/1-Main-Homepage.png)
 
 # ⚠️ Attention:
-This is a really extensive project. If you just want a summary, please scroll down to the <a href="#Summary">"Summary"</a> section.
+This is a really extensive project. If you just want a summary, please scroll down to the <a href="summary">"Summary"</a> section.
 
 ---
 
 ## 🛠️ Built With
-...
-<a name="built-with"></a>
-
 
 <div align="center">
   
@@ -188,7 +187,8 @@ This project is a full-featured hotel management web application designed to str
 
 ---
 
-<a name="Summary"><h2>🧩 Summary:</h2></a>
+<a name="summary"></a>
+<h2>🧩 Summary:</h2>
 
 
 ### Project Overview
