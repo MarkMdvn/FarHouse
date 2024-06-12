@@ -22,7 +22,7 @@
 ![screenshot](https://github.com/MarkMdvn/FarHouse/blob/main/Hotel-Project-Frontend/public/readme-images/1-Main-Homepage.png)
 
 # ⚠️ Attention:
-This is a really extensive project. If you just want a summary, please scroll down to the <a href="#summary">"Summary"</a> section.
+This project is extensive. If you just want a summary, please scroll down to the <a href="#summary">"Summary"</a> section.
 
 ---
 
