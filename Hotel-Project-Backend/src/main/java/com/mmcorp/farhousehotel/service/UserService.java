@@ -28,7 +28,7 @@ public class UserService implements IUserService {
         }
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         System.out.println(user.getPassword());
-        Role userRole = roleRepository.findByName("ROLE_ADMIN").get();
+        Role userRole = roleRepository.findByName("ROLE_ROLE").get(); // Change to "ROLE_ADMIN" if you want new users to have admin priviliges
         user.setRoles(Collections.singletonList(userRole));
         return userRepository.save(user);
     }
